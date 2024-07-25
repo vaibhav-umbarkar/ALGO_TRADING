@@ -28,12 +28,12 @@ Clone the repository:
 
 bash
 Copy code
-git clone <repository-url>
+git clone <https://github.com/vaibhav8485/ALGO_TRADING.git>
 Navigate to the project directory:
 
 bash
 Copy code
-cd <project-directory>
+cd <ALGO_TRADING>
 Install the required dependencies:
 
 bash
@@ -46,7 +46,7 @@ Run the script using:
 
 bash
 Copy code
-python trade_script.py
+python script.py
 The script will output buy and sell signals based on the configured indicators and risk management strategies.
 
 Configuration
@@ -59,4 +59,4 @@ License
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
 Contact
-For any questions or issues, please contact [your-email@example.com].
+For any questions or issues, please contact vaibhavumbarkar8485@gmail.com.
