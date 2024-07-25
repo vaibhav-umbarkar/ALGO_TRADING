@@ -33,16 +33,23 @@ Requirements:
 Installation:
 
 Step-1 (Clone the repository):
-<git clone https://github.com/vaibhav8485/ALGO_TRADING.git>
+
+git clone https://github.com/vaibhav8485/ALGO_TRADING.git
+
 
 Step-2 (Navigate to the project directory):
-<cd ALGO_TRADING>
 
-Step-3 (Install the required dependencies)
-<pip install -r requirements.txt>
+cd ALGO_TRADING
 
-Step-4 (Run the script using)
-<python script.py>
+
+Step-3 (Install the required dependencies):
+
+pip install -r requirements.txt
+
+
+Step-4 (Run the script using):
+
+python script.py
 
 
 Configuration:
