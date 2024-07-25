@@ -1,0 +1,76 @@
+{
+  "data": [
+    {
+      "symbol": "BTC/INR",
+      "org_price": 0,
+      "temp_price": 0,
+      "status": "auto"
+    },
+    {
+      "symbol": "ETH/INR",
+      "org_price": 0,
+      "temp_price": 0,
+      "status": "auto"
+    },
+    {
+      "symbol": "MATIC/INR",
+      "org_price": 0,
+      "temp_price": 0,
+      "status": "auto"
+    },
+    {
+      "symbol": "XRP/INR",
+      "org_price": 0,
+      "temp_price": 0,
+      "status": "auto"
+    },
+    {
+      "symbol": "ADA/INR",
+      "org_price": 0,
+      "temp_price": 0,
+      "status": "auto"
+    },
+    {
+      "symbol": "BAT/INR",
+      "org_price": 0,
+      "temp_price": 0,
+      "status": "auto"
+    },
+    {
+      "symbol": "BNB/INR",
+      "org_price": 0,
+      "temp_price": 0,
+      "status": "auto"
+    },
+    {
+      "symbol": "SOL/INR",
+      "org_price": 0,
+      "temp_price": 0,
+      "status": "auto"
+    },
+    {
+      "symbol": "NEAR/INR",
+      "org_price": 0,
+      "temp_price": 0,
+      "status": "auto"
+    },
+    {
+      "symbol": "SAND/INR",
+      "org_price": 0,
+      "temp_price": 0,
+      "status": "auto"
+    },
+    {
+      "symbol": "DOGE/INR",
+      "org_price": 0,
+      "temp_price": 0,
+      "status": "auto"
+    },
+    {
+      "symbol": "STX/INR",
+      "org_price": 0,
+      "temp_price": 0,
+      "status": "auto"
+    }
+  ]
+}

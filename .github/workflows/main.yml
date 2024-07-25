@@ -1,0 +1,58 @@
+name: Crypto Bot
+
+on:
+  schedule:
+    - cron: '0 6 * * *'   # 6:00 AM
+    - cron: '0 18 * * *'  # 6:00 PM
+    - cron: '0 9 * * *'   # 9:00 AM
+    - cron: '0 21 * * *'  # 9:00 PM
+    - cron: '0 12 * * *'  # 12:00 PM (noon)
+    - cron: '0 0 * * *'   # 12:00 AM (midnight)
+    - cron: '0 3 * * *'   # 3:00 AM
+    - cron: '0 15 * * *'  # 3:00 PM
+  workflow_dispatch:  
+
+jobs:
+  execute_code:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Install Dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Execute Python script
+        env:
+          SENDER_MAIL: ${{ secrets.SENDER_MAIL }}
+          SENDER_PASS: ${{ secrets.SENDER_PASS }}
+          RECEIVER_MAIL: ${{ secrets.RECEIVER_MAIL }}
+          SECRETKEY: ${{ secrets.SECRETKEY }}
+          APIKEY: ${{ secrets.APIKEY }}
+        run: |
+          python script.py
+      
+      - name: Commit changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          grep -qxF 'lib/__pycache__/' .gitignore || echo 'lib/__pycache__/' >> .gitignore
+          git add log.json .gitignore
+          if [ -n "$(git status --porcelain)" ]; then
+            COMMIT_MESSAGE="Update: $(date '+%Y-%m-%d %H:%M:%S')"
+            git commit -m "$COMMIT_MESSAGE"
+            git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+            git push origin HEAD:master
+          else
+            echo "No changes to commit"
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
