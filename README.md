@@ -19,37 +19,40 @@ Customizable: Easily configurable to suit different trading strategies and prefe
 
 Requirements:
 
-Python 3.x
-ccxt==4.1.56
-cryptography==41.0.5
-numpy==1.26.2
-pandas==2.1.3
-python-socketio==5.11.2
-requests==2.31.0
-ta==0.11.0
-websocket-client==1.8.0
+1. Python 3.x
+2. ccxt==4.1.56
+3. cryptography==41.0.5
+4. numpy==1.26.2
+5. pandas==2.1.3
+6. python-socketio==5.11.2
+7. requests==2.31.0
+8. ta==0.11.0
+9. websocket-client==1.8.0
 
 
 Installation:
 
-Step-1 (Clone the repository)
-git clone https://github.com/vaibhav8485/ALGO_TRADING.git
+Step-1 (Clone the repository):
+<git clone https://github.com/vaibhav8485/ALGO_TRADING.git>
 
-Step-2 (Navigate to the project directory)
-cd ALGO_TRADING
+Step-2 (Navigate to the project directory):
+<cd ALGO_TRADING>
 
 Step-3 (Install the required dependencies)
-pip install -r requirements.txt
+<pip install -r requirements.txt>
 
 Step-4 (Run the script using)
-python script.py
+<python script.py>
 
 
 Configuration:
 
 Technical Indicators: Adjust the parameters for various indicators in the config.py file.
 Risk Management: Modify risk management settings to fit your trading style and risk tolerance.
-Contribution
+
+
+Contribution:
+
 Contributions to improve the script are welcome. Please fork the repository, make your changes, and submit a pull request.
 
 
