@@ -43,7 +43,6 @@ pip install -r requirements.txt
 
 Step-4 (Run the script using)
 python script.py
-The script will output buy and sell signals based on the configured indicators and risk management strategies.
 
 
 Configuration:
