@@ -20,43 +20,45 @@ Customizable: Easily configurable to suit different trading strategies and prefe
 Requirements:
 
 Python 3.x
-Required Python libraries (e.g., pandas, numpy, matplotlib, ta-lib)
+ccxt==4.1.56
+cryptography==41.0.5
+numpy==1.26.2
+pandas==2.1.3
+python-socketio==5.11.2
+requests==2.31.0
+ta==0.11.0
+websocket-client==1.8.0
 
 
 Installation:
-Clone the repository:
 
-bash
-Copy code
-git clone <https://github.com/vaibhav8485/ALGO_TRADING.git>
-Navigate to the project directory:
+Step-1 (Clone the repository)
+git clone https://github.com/vaibhav8485/ALGO_TRADING.git
 
-bash
-Copy code
-cd <ALGO_TRADING>
-Install the required dependencies:
+Step-2 (Navigate to the project directory)
+cd ALGO_TRADING
 
-bash
-Copy code
+Step-3 (Install the required dependencies)
 pip install -r requirements.txt
-Usage
-Configure the script settings in the config.py file to match your trading preferences.
 
-Run the script using:
-
-bash
-Copy code
+Step-4 (Run the script using)
 python script.py
 The script will output buy and sell signals based on the configured indicators and risk management strategies.
 
-Configuration
+
+Configuration:
+
 Technical Indicators: Adjust the parameters for various indicators in the config.py file.
 Risk Management: Modify risk management settings to fit your trading style and risk tolerance.
 Contribution
 Contributions to improve the script are welcome. Please fork the repository, make your changes, and submit a pull request.
 
-License
+
+License:
+
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
-Contact
+
+Contact:
+
 For any questions or issues, please contact vaibhavumbarkar8485@gmail.com.
