@@ -22,7 +22,7 @@ Important: This script is provided for educational purposes only. The informatio
 - requests==2.31.0
 - ta==0.11.0
 - websocket-client==1.8.0
-### Installation
+### Run Locally 
 
 Step-1 (Clone the repository)
 
