@@ -38,7 +38,7 @@ jobs:
           SECRETKEY: ${{ secrets.SECRETKEY }}
           APIKEY: ${{ secrets.APIKEY }}
         run: |
-          python script.py
+          # python script.py
       
       - name: Commit changes
         run: |
